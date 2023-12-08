@@ -29,7 +29,7 @@ bot = Client("bot",
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text(f"Hello [{m.from_user.first_name}](tg://user?id={m.from_user.id})\nPress /covid")
+    editable = await m.reply_text(f"Hello [{m.from_user.first_name}](tg://user?id={m.from_user.id})\nPress /govind")
 
 
 @bot.on_message(filters.command("stop"))
@@ -39,7 +39,7 @@ async def restart_handler(_, m):
 
 
 
-@bot.on_message(filters.command(["covid"]))
+@bot.on_message(filters.command(["govind"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text('Send TXT file for download')
     input: Message = await bot.listen(editable.chat.id)
@@ -162,8 +162,8 @@ async def account_login(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**Vid_id  »** {str(count).zfill(3)}\n**Title  »** {name1} {res} {MR}.mkv\n**Batch »** {raw_text0}\n\n'
-                cc1 = f'**Vid_id  »** {str(count).zfill(3)}\n**Title »** {name1} {MR}.pdf \n**Batch »** {raw_text0}\n\n'
+                cc = f'**[🎬]Vid_id  »** {str(count).zfill(3)}\n**Title  »** {name1} {res} {Govind}.mkv\n**Batch »** {raw_text0}\n\n'
+                cc1 = f'**[🎬]Vid_id  »** {str(count).zfill(3)}\n**Title »** {name1} {Govind}.pdf \n**Batch »** {raw_text0}\n\n'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
