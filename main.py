@@ -162,8 +162,8 @@ async def account_login(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**[🎬]Vid_id  »** {str(count).zfill(3)}\n**Title  »** {name1} {res} {Govind}.mkv\n**Batch »** {raw_text0}\n\n'
-                cc1 = f'**[🎬]Vid_id  »** {str(count).zfill(3)}\n**Title »** {name1} {Govind}.pdf \n**Batch »** {raw_text0}\n\n'
+                cc = f'**[🎬]Vid_id  :** {str(count).zfill(3)}\n**Title  :** {name1} {res} {Govind}.mkv\n**Batch »** {raw_text0}\n\n'
+                cc1 = f'**[📕]Pdf_id  :** {str(count).zfill(3)}\n**Title :** {name1} {Govind}.pdf \n**Batch »** {raw_text0}\n\n'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
@@ -200,7 +200,7 @@ async def account_login(bot: Client, m: Message):
 
             except Exception as e:
                 await m.reply_text(
-                    f"**downloading failed 🥺**\n{str(e)}\n**Name** - {name}\n**Link** - `{url}`"
+                    f"**downloading failed 🥺(sorry yaar**\n{str(e)}\n**Name** - {name}\n**Link** - `{url}`"
                 )
                 continue
 
