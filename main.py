@@ -22,14 +22,14 @@ import re
 import os
 
 bot = Client("bot",
-             bot_token= "6133434192:AAHDkrhW9sgqzLU3ay4o7GRy_yPyDuWJdIc",
-             api_id= 27495136,
-             api_hash= "4ccc4865eec4d8fde7530e71948b3424")
+             bot_token= "6698282518:AAEMINBsffaF8x5rkFtf5y60Dv-YGjI-NJw",
+             api_id= 21104697,
+             api_hash= "2bbb3dc6c94bac3e5fcc492e86475063")
 
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text(f"Hello [{m.from_user.first_name}](tg://user?id={m.from_user.id})\nPress /govind")
+    editable = await m.reply_text(f"Hello [{m.from_user.first_name}](tg://user?id={m.from_user.id})\nPress /Hacker")
 
 
 @bot.on_message(filters.command("stop"))
@@ -100,7 +100,7 @@ async def account_login(bot: Client, m: Message):
     
     
 
-    await editable.edit("**Enter A Highlighter Otherwise send 👉Co👈 **")
+    await editable.edit("**Enter A Highlighter□Electric Hacker□Otherwise send 👉Co👈 **")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
@@ -162,8 +162,8 @@ async def account_login(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**[🎬]Vid_id  :** {str(count).zfill(3)}\n**Title  :** {name1} {res} 【﻿Govind】.mkv\n**Batch »** {raw_text0}\n\n'
-                cc1 = f'**[📕]Pdf_id  :** {str(count).zfill(3)}\n**Title :** {name1} 【﻿Govind】.pdf \n**Batch »** {raw_text0}\n\n'
+                cc = f'**[🎬]Vid_id  :** {str(count).zfill(3)}\n**Title  :** {name1} {res} 【﻿Electric Hacker 🥰】.mkv\n**Batch »** {raw_text0}\n\n'
+                cc1 = f'**[📕]Pdf_id  :** {str(count).zfill(3)}\n**Title :** {name1} 【﻿Electric Hacker 🥰】.pdf \n**Batch »** {raw_text0}\n\n'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
