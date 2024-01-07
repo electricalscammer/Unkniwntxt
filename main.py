@@ -22,14 +22,14 @@ import re
 import os
 
 bot = Client("bot",
-             bot_token= "6698282518:AAEMINBsffaF8x5rkFtf5y60Dv-YGjI-NJw",
-             api_id= 21104697,
-             api_hash= "2bbb3dc6c94bac3e5fcc492e86475063")
+             bot_token= "5881186368:AAE9NQzCRpKz8HA0uWaLCe-MimjSGrkvcWw",
+             api_id= 24262622,
+             api_hash= "50831eb3329ed9c0557aa2bc6aa34376")
 
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text(f"Hello [{m.from_user.first_name}](tg://user?id={m.from_user.id})\nPress /Hacker")
+    editable = await m.reply_text(f"Hello [{m.from_user.first_name}](tg://user?id={m.from_user.id})\nPress /Electric Hacker")
 
 
 @bot.on_message(filters.command("stop"))
@@ -39,7 +39,7 @@ async def restart_handler(_, m):
 
 
 
-@bot.on_message(filters.command(["govind"]))
+@bot.on_message(filters.command(["Electric"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text('Send TXT file for download')
     input: Message = await bot.listen(editable.chat.id)
@@ -100,7 +100,7 @@ async def account_login(bot: Client, m: Message):
     
     
 
-    await editable.edit("**Enter A Highlighter□Electric Hacker□Otherwise send 👉Co👈 **")
+    await editable.edit("**Enter A Highlighter □Electric Hacker□ Otherwise send 👉Co👈 **")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
@@ -162,8 +162,8 @@ async def account_login(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**[🎬]Vid_id  :** {str(count).zfill(3)}\n**Title  :** {name1} {res} 【﻿Electric Hacker 🥰】.mkv\n**Batch »** {raw_text0}\n\n'
-                cc1 = f'**[📕]Pdf_id  :** {str(count).zfill(3)}\n**Title :** {name1} 【﻿Electric Hacker 🥰】.pdf \n**Batch »** {raw_text0}\n\n'
+                cc = f'**[🎬]Vid_id  :** {str(count).zfill(3)}\n**Topic  :** {name1} {res} 『Electric Hacker』.mkv\n**Batch :** {raw_text0}\n\n'
+                cc1 = f'**[📕]Pdf_id  :** {str(count).zfill(3)}\n**Topic :** {name1}『Electric Hacker』.pdf \n**Batch :** {raw_text0}\n\n'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
@@ -200,7 +200,7 @@ async def account_login(bot: Client, m: Message):
 
             except Exception as e:
                 await m.reply_text(
-                    f"**downloading failed 🥺(sorry yaar**\n{str(e)}\n**Name** - {name}\n**Link** - `{url}`"
+                    f"**Lo bhai ho gya n galti 🥺(ab nhi hoga)**\n{str(e)}\n**Name** - {name}\n**Link** - `{url}`"
                 )
                 continue
 
